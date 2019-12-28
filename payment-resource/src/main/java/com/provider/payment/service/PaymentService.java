@@ -32,7 +32,7 @@ public class PaymentService {
 	public PaymentResponse getTx(String vendor) {
 		PaymentResponse response = new PaymentResponse();
 		List<Payment> payments = dao.getTransactionInfo(vendor);
-		response.setStatus("succes");
+		response.setStatus("success");
 		response.setPayments(payments);
 		return response;
 	}

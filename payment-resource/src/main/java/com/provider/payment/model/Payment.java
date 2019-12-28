@@ -63,7 +63,7 @@ public class Payment implements Serializable {
 
 	public Payment() {
 		super();
-		// TODO Auto-generated constructor stub
+
 	}
 
 	public Payment(String transactionId, String vendor, Date paymentDate, double amount) {

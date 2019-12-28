@@ -1,5 +1,6 @@
 package com.provider.payment.dto;
 
+import java.time.Instant;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -47,4 +48,18 @@ public class PaymentResponse {
 	public void setPayments(List<Payment> payments) {
 		this.payments = payments;
 	}
+
+	public PaymentResponse(String status, String message, String txDate, List<Payment> payments) {
+		super();
+		this.status = status;
+		this.message = message;
+		this.txDate = txDate;
+		this.payments = payments;
+	}
+
+	public PaymentResponse() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
 }
